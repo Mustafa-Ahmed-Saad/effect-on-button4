@@ -1,0 +1,116 @@
+.container {
+    text-align: center;
+    margin-top: 300px
+}
+
+/* all button */
+.btn {
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "montserrat";
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #3498db;
+    transition: 0.8s
+}
+
+/* the effect hidden*/
+.btn::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #3498db;
+    top: 0;
+    transition: 0.2s
+}
+
+/* button 0 */
+.btn0 {
+    color: #3498db;
+}
+
+.btn0:hover {
+    background:#3498db;
+    color: #fff
+}
+
+/* button 1 */
+.btn1 {
+    color: #3498db;
+}
+
+.btn1:hover {
+    color: #fff;
+}
+
+.btn1::before {
+    left: 0;
+    width: 0;
+    border-radius: 0 0 0 50%;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
+
+/* button 2 */
+.btn2 {
+    color: #fff;
+}
+
+.btn2:hover {
+    color: #3498db;
+}
+
+.btn2::before {
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 0 50%;
+}
+
+.btn2:hover::before {
+    width: 0;
+}
+
+/* button 3 */
+.btn3 {
+    color: #fff;
+}
+
+.btn3:hover {
+    color: #3498db;
+}
+
+.btn3::before {
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 0 50%;
+}
+
+.btn3:hover::before {
+    width: 0;
+}
+
+/* button 4 */
+.btn4 {
+    color: #3498db;
+}
+
+.btn4:hover {
+    color: #fff;
+}
+
+.btn4::before {
+    right: 0;
+    width: 0;
+    border-radius: 0 0 0 50%;
+}
+
+.btn4:hover::before {
+    width: 100%;
+}
